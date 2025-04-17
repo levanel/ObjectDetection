@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 //loading an ssd(single shot detection model pre trained with  coco dataset)
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
-//my love my life, tensorflow(based on BERT)
 import '@tensorflow/tfjs';
 import './ObjectDetection.css'; // Import the CSS file
 // here we are declaring all da variables that we gon use
