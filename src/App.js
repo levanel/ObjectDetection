@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 //loading an ssd(single shot detection model pre trained with  coco dataset)
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
-//my love my life, tensorflow(based on BERT)
 import '@tensorflow/tfjs';
 import './ObjectDetection.css'; // Import the CSS file
 // here we are declaring all da variables that we gon use
@@ -32,7 +31,7 @@ function ObjectDetection() {
     };
     setupCamera();
   }, []);
-  //&& logic works jus like and logic gate, it checks if BOTH shit has loaded and only then it will give  A Green Flagg  🟩
+  //&& logic works jus like and logic gate, it checks if BOTH has loaded and only then it will give  A Green Flagg  🟩
   useEffect(() => {
     if (model && videoRef.current) {
       videoRef.current.onloadedmetadata = () => {
@@ -139,14 +138,14 @@ function ObjectDetection() {
       });
     }
   }, [predictions]);
-  //sone small function that will be later used in the last return section for DISPLAYING it
+  //some small function that will be later used in the last return section for DISPLAYING it
   const attentionPercentage = (phoneTime / totalTime) * 100;
   const totalAttentionInClass =
     totalTime - (attentionPercentage / 100) * totalTime;
 
   const totalAttentionPercentage = 100 - attentionPercentage;
 
-  //khicdhi serve krna
+  //returning all 
   return (
     <div className="container">
       <div style={{ position: 'relative', width: 'fit-content' }}>
